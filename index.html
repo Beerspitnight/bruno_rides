@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bruno Rides — Newark & Philadelphia Airport Car Service</title>
+  <style>
+    :root {
+      --primary-red: #d32f2f;
+      --accent-gold: #ffc107;
+      --dark-bg: #1a1a1a;
+      --light-text: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--dark-bg);
+      color: var(--light-text);
+      line-height: 1.6;
+    }
+
+    /* Hero Section with Updated Image */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), 
+                  url('https://pub-148ac32c039948b39fe30256fedac71b.r2.dev/2018-honda-accord'); 
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 4vw, 1.8rem);
+      color: var(--accent-gold);
+      font-weight: bold;
+      margin-bottom: 35px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    }
+
+    /* Primary Call to Action */
+    .btn-book {
+      background-color: var(--primary-red);
+      color: white;
+      padding: 22px 45px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4);
+      display: inline-block;
+      border: 2px solid transparent;
+    }
+
+    .btn-book:hover {
+      background-color: #ff5252;
+      transform: scale(1.05);
+      border-color: white;
+    }
+
+    /* Content Sections */
+    .services {
+      background: #ffffff;
+      color: #333;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .location-highlight {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: #222;
+    }
+
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 40px 30px;
+      border-radius: 12px;
+      flex: 1;
+      min-width: 300px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border-bottom: 6px solid var(--primary-red);
+    }
+
+    .card h3 {
+      color: var(--primary-red);
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      padding: 60px 20px;
+      background: #111;
+      text-align: center;
+    }
+
+    .contact-link {
+      color: var(--accent-gold);
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .sub-text {
+      margin-top: 15px;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>BRUNO RIDES</h1>
+    <div class="tagline">Your Everyday Ride For Way Less</div>
+    <a href="tel:+12678208735" class="btn-book">BOOK NOW: 267.820.8735</a>
+    <p style="margin-top: 25px; font-weight: 500; letter-spacing: 1px;">SAVE BOTH WAYS</p>
+  </header>
+
+  <section class="services">
+    <div class="location-highlight">
+      📍 Ocean & Monmouth County<br>
+      ✈️ Newark & Philadelphia Airports
+    </div>
+    
+    <div class="service-grid">
+      <div class="card">
+        <h3>⏱️ On Time Every Time</h3>
+        <p>Reliable, punctual service because we value your time.</p>
+      </div>
+      <div class="card">
+        <h3>🛡️ Safe & Trusted</h3>
+        <p>Professional and courteous drivers focused on your safety.</p>
+      </div>
+      <div class="card">
+        <h3>🌿 Modern & Clean</h3>
+        <p>Spotless, fuel-efficient vehicles that are kind to your wallet.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Available 24/7 for Airport Runs & Daily Commutes</p>
+    <a href="mailto:bruno.rides44@gmail.com" class="contact-link">bruno.rides44@gmail.com</a>
+    <div class="sub-text">
+      © 2026 Bruno Rides. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
